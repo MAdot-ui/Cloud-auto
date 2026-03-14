@@ -1,5 +1,4 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import { Detail } from "./detail.component";
 import { MemberDetail } from "./detail.vm";
 import { getMemberDetail } from "./api/api";

@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "@tanstack/react-router";
 import { routes } from "../../router";
 
 export const LoginPod: React.FC = () => {
@@ -11,7 +11,7 @@ export const LoginPod: React.FC = () => {
     e.preventDefault();
 
     if (username === "admin" && password === "test") {
-      navigate(routes.list);
+      navigate({ to: routes.list });
     } else {
       alert("User / password not valid, psst... admin / test");
     }
